@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Video Call (RU Max Fix)</title>
+    <title>Business Video Call (RU Fix)</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
     <style>
+        /* Стили те же самые, что и раньше */
         :root { --bg-color: #f4f4f4; --panel-bg: #fff; --text-color: #333; --accent-color: #000; --border-color: #ccc; --chat-bg: #fafafa; }
         body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
         .workspace { display: flex; flex: 1; overflow: hidden; }
@@ -186,6 +187,12 @@
             });
         }
 
+        // Остальные функции (чат, экран, копирование) без изменений для краткости
+        // ... (вставьте сюда функции из предыдущего кода: setupDataConnection, sendMessage, stopScreenShare и т.д.)
+        
+        // Для полноценной работы скопируйте функции setupDataConnection, sendMessage, addMessage, stopScreenShare из предыдущего ответа
+        // Они остались такими же.
+        
         function setupDataConnection(conn) {
             dataConnection = conn;
             chatInput.disabled = false;
